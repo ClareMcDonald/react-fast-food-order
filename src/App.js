@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import { useState } from 'react';
 import NameInput from './NameInput';
+import FoodImages from './FoodImages';
+import FoodDropdown from './FoodDropdown';
 import './App.css';
 
 function App() {
@@ -13,11 +15,11 @@ function App() {
   return (
     <div className="App">
       <h2>Order for: {orderName}</h2>
-      {/* // <p>food: {foodId}</p>
-      // <p>drink: {drinkId}</p>
-      // <p>side: {sideId}</p> */}
+      <FoodImages foodId={foodId}/>
+
       <div className="order-from">
-        <NameInput setOrderName={setOrderName}/>
+        <NameInput setOrderName={setOrderName} />
+        <FoodDropdown setFoodId={setFoodId}/> 
       </div>
     </div>
   );
