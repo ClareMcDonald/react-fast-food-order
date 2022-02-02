@@ -5,6 +5,7 @@ import FoodImages from './FoodImages';
 import FoodDropdown from './FoodDropdown';
 import DrinkDropdown from './DrinkDropdown';
 import SideDropdown from './SideDropdown';
+import InstructionsForm from './InstructionsForm';
 import './App.css';
 
 function App() {
@@ -23,7 +24,8 @@ function App() {
         <NameInput setOrderName={setOrderName} />
         <FoodDropdown setFoodId={setFoodId} /> 
         <DrinkDropdown setDrinkId={setDrinkId} />
-        <SideDropdown setSideId={setSideId}/>
+        <SideDropdown setSideId={setSideId} />
+        <InstructionsForm setInstructions={setInstructions} />
       </div>
     </div>
   );
