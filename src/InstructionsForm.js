@@ -16,9 +16,9 @@ export default function InstructionsForm({ instructions, setInstructions }) {
     setInstructionInput(e.target.value);
   }
   return <div>
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="form">
       Add instructions!
-      <input required value={instructionInput} onChange={handleInstructionChange}></input>
+      <input required value={instructionInput} onChange={handleInstructionChange} className="instruction-input"></input>
       <button>Submit</button>
     </form>
   </div>;

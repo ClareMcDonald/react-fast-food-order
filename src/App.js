@@ -20,7 +20,7 @@ function App() {
       <h2>Order for: {orderName}</h2>
       <FoodImages foodId={foodId} drinkId={drinkId} sideId={sideId} />
 
-      <div className="order-from">
+      <div className="order-form">
         <NameInput setOrderName={setOrderName} />
         <FoodDropdown setFoodId={setFoodId} /> 
         <DrinkDropdown setDrinkId={setDrinkId} />

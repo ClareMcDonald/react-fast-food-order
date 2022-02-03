@@ -7,6 +7,6 @@ export default function NameInput({ setOrderName }) {
     
   return <div className='name-input'>
         Order name:
-    <input onChange={handleChange} />
+    <input onChange={handleChange} className="name"/>
   </div>;
 }

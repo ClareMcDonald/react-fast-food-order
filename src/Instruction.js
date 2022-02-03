@@ -1,7 +1,8 @@
 import React from 'react';
+import './App.css';
 
 export default function Instruction({ instruction }) {
-  return <div>
+  return <div className="instruction">
     {instruction}
   </div>;
 }
