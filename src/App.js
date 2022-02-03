@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import { useState } from 'react';
 import NameInput from './NameInput';
 import FoodImages from './FoodImages';
@@ -6,6 +5,7 @@ import FoodDropdown from './FoodDropdown';
 import DrinkDropdown from './DrinkDropdown';
 import SideDropdown from './SideDropdown';
 import InstructionsForm from './InstructionsForm';
+import InstructionsList from './InstructionsList';
 import './App.css';
 
 function App() {
@@ -25,7 +25,8 @@ function App() {
         <FoodDropdown setFoodId={setFoodId} /> 
         <DrinkDropdown setDrinkId={setDrinkId} />
         <SideDropdown setSideId={setSideId} />
-        <InstructionsForm setInstructions={setInstructions} />
+        <InstructionsForm setInstructions={setInstructions} instructions={instructions}/>
+        <InstructionsList instructions={instructions} />
       </div>
     </div>
   );

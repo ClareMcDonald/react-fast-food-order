@@ -8,6 +8,8 @@ export default function InstructionsForm({ instructions, setInstructions }) {
     e.preventDefault();
 
     setInstructions([...instructions, instructionInput]);
+
+    setInstructionInput('');
   }
     
   function handleInstructionChange(e) {
@@ -15,7 +17,9 @@ export default function InstructionsForm({ instructions, setInstructions }) {
   }
   return <div>
     <form onSubmit={handleSubmit}>
-      <input value={instructionInput} onChange={handleInstructionChange}></input>
+      Add instructions!
+      <input required value={instructionInput} onChange={handleInstructionChange}></input>
+      <button>Submit</button>
     </form>
   </div>;
 }
